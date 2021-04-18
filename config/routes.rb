@@ -4,6 +4,13 @@ Rails.application.routes.draw do
 
   post '/users/edit', to: 'users#update'
 
+  resources :gigs do
+    member do
+      delete :delete_photo
+      post :upload_photo
+    end
+  end
+
   root to: 'pages#home'
   devise_for :users,
               path: '',

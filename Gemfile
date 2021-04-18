@@ -34,6 +34,7 @@ gem 'bulma-extensions-rails', '~> 1.0', '>= 1.0.30'
 gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'omniauth', '= 1.9.0'
 gem 'omniauth-facebook', '= 5.0.0'
+gem 'faker', '=1.9.3'
 
 
 

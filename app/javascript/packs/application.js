@@ -9,6 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 window.Noty = require("noty")
+window.Dropzone = require("dropzone")
 
 $(document).ready(() => {
     $('.toggle').on('click', (e) => {
@@ -22,3 +23,6 @@ $(document).ready(() => {
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+require("trix")
+require("@rails/actiontext")
